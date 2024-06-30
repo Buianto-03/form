@@ -107,6 +107,7 @@ function addCard(e) {
         || !newOccupation.value
     ) {
         resetInputs(newName, newSecondName, newEmail, newCity, newOccupation)
+        console.log('no');
         return
     }
 
@@ -168,4 +169,4 @@ clear.addEventListener('click', clearLocalStorage)
 // При загрузке страницы перерисовываются карточки пользователей
 window.addEventListener('load', () => {
     rerenderCards(JSON.parse(localStorage.getItem('users')))
-})
+	})
