@@ -160,6 +160,7 @@ function resetInputs(...inputs) {
 function clearLocalStorage() {
     localStorage.removeItem('users')
     window.location.reload()
+    console.log('reset')
 }
 
 // Добавление слушателей на кнопки добавления и очистки
